@@ -1,5 +1,5 @@
 import { useState } from 'react'
-
+import React from 'react'
 import './App.css'
 
 function App() {
@@ -13,6 +13,8 @@ function App() {
     }
   )
 
+  
+
   return (
     <div className="App">
      <form className="signup-form">
@@ -22,7 +24,7 @@ function App() {
         placeholder='Email adress'
         onChange={handleChange}
         name="email"
-        value={formData.}
+        value={formData.email}
         />
         <input 
         type="password" 
@@ -30,7 +32,7 @@ function App() {
         placeholder='Password'
         onChange={handleChange}
         name="password"
-        value={formData.}
+        value={formData.confpassword}
         />
         <input 
         type="password" 
@@ -38,7 +40,7 @@ function App() {
         placeholder='Confirm password'
         onChange={handleChange}
         name="confpassword"
-        value={formData.}
+        value={formData.password}
         />
         <div className="checkbox-container">
               <input 
@@ -46,7 +48,7 @@ function App() {
               name="isJoinNewsLetter" 
               onChange={handleChange}
               id="isJoinNewsLetter" 
-              placeholder=''
+              checked={formData.isJoinNewsLetter}
               />
               <label htmlFor="isJoinNewsLetter">I want to join the newsletter</label>
         </div>
