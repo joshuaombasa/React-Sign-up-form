@@ -13,7 +13,17 @@ function App() {
     }
   )
 
-  
+  console.log(formData)
+
+  function handleChange(event) {
+    const {name, type, value, checked} = event.target
+    setFormData(prevFormData => {
+      return {
+        ...prevFormData,
+        [name]: type === "checkbox" ? checked : value
+      }
+    })
+  }
 
   return (
     <div className="App">
@@ -32,7 +42,7 @@ function App() {
         placeholder='Password'
         onChange={handleChange}
         name="password"
-        value={formData.confpassword}
+        value={formData.password}
         />
         <input 
         type="password" 
@@ -40,7 +50,7 @@ function App() {
         placeholder='Confirm password'
         onChange={handleChange}
         name="confpassword"
-        value={formData.password}
+        value={formData.confpassword}
         />
         <div className="checkbox-container">
               <input 
