@@ -13,25 +13,27 @@ function App() {
         className="email" 
         placeholder='Email adress'
         onChange={handleChange}
+        name="email"
         />
         <input 
         type="password" 
         className="password" 
         placeholder='Password'
         onChange={handleChange}
+        name="password"
         />
         <input 
         type="password" 
         className="confpassword" 
         placeholder='Confirm password'
         onChange={handleChange}
+        name="confpassword"
         />
         <div className="checkbox-container">
               <input 
               type="checkbox" 
-              name="" 
+              name="isJoinNewsLetter" 
               onChange={handleChange}
-        
               id="isJoinNewsLetter" 
               placeholder=''
               />
