@@ -1,0 +1,32 @@
+.signup-form {
+  display: flex;
+  width: 550px;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 20px;
+  padding: 50px;
+  box-shadow: 5px 5px 15px -1px rgba(0,0,0,0.75);
+  border-radius: 10px;
+}
+
+input[type="password"], input[type="email"] {
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 7px;
+  border: 0.25px solid rgb(191, 181, 181);
+}
+
+.checkbox-container {
+  display: flex;
+  gap: 10px;
+}
+
+.sign-up-btn {
+  padding: 10px 20px;
+  font-weight: bold;
+  color: black;
+  background-color: #c2e7ff;
+  font-size: 20px;
+  border: none;
+  border-radius: 7px;
+}
