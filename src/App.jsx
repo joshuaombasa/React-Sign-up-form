@@ -4,6 +4,14 @@ import './App.css'
 
 function App() {
   
+  const [formData, setFormData] = React.useState(
+    {
+      email: '',
+      password: '',
+      confpassword: '',
+      isJoinNewsLetter: true
+    }
+  )
 
   return (
     <div className="App">
@@ -14,6 +22,7 @@ function App() {
         placeholder='Email adress'
         onChange={handleChange}
         name="email"
+        value={formData.}
         />
         <input 
         type="password" 
@@ -21,6 +30,7 @@ function App() {
         placeholder='Password'
         onChange={handleChange}
         name="password"
+        value={formData.}
         />
         <input 
         type="password" 
@@ -28,6 +38,7 @@ function App() {
         placeholder='Confirm password'
         onChange={handleChange}
         name="confpassword"
+        value={formData.}
         />
         <div className="checkbox-container">
               <input 
