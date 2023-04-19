@@ -27,7 +27,7 @@ function App() {
         
               id="isJoinNewsLetter" 
               />
-              <label htmlFor="isJoinNewsLetter"></label>
+              <label htmlFor="isJoinNewsLetter">I want to join the newsletter</label>
         </div>
         <button className='sign-up-btn'>Sign Up</button>
      </form>
