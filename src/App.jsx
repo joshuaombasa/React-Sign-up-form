@@ -3,7 +3,7 @@ import { useState } from 'react'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  
 
   return (
     <div className="App">
@@ -12,21 +12,25 @@ function App() {
         type="email" 
         className="email" 
         placeholder='Email adress'
+        onChange={handleChange}
         />
         <input 
         type="password" 
         className="password" 
         placeholder='Password'
+        onChange={handleChange}
         />
         <input 
         type="password" 
         className="confpassword" 
         placeholder='Confirm password'
+        onChange={handleChange}
         />
         <div className="checkbox-container">
               <input 
               type="checkbox" 
               name="" 
+              onChange={handleChange}
         
               id="isJoinNewsLetter" 
               placeholder=''
