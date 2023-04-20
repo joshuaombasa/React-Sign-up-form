@@ -55,7 +55,7 @@ function App() {
         name="password"
         value={formData.password}
         />
-        
+
         <input 
         type="password" 
         className="confpassword" 
@@ -64,6 +64,7 @@ function App() {
         name="confpassword"
         value={formData.confpassword}
         />
+        
         <div className="checkbox-container">
               <input 
               type="checkbox" 
