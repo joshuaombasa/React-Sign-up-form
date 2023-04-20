@@ -64,7 +64,7 @@ function App() {
         name="confpassword"
         value={formData.confpassword}
         />
-        
+
         <div className="checkbox-container">
               <input 
               type="checkbox" 
@@ -75,6 +75,7 @@ function App() {
               />
               <label htmlFor="isJoinNewsLetter">I want to join the newsletter</label>
         </div>
+        
         <button className='sign-up-btn'>Sign Up</button>
      </form>
     </div>
