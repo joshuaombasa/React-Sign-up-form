@@ -46,7 +46,7 @@ function App() {
         name="email"
         value={formData.email}
         />
-        
+
         <input 
         type="password" 
         className="password" 
@@ -55,6 +55,7 @@ function App() {
         name="password"
         value={formData.password}
         />
+        
         <input 
         type="password" 
         className="confpassword" 
