@@ -35,7 +35,9 @@ function App() {
 
   return (
     <div className="App">
+
      <form className="signup-form" onSubmit={handleSubmit}>
+      
         <input 
         type="email" 
         className="email" 
