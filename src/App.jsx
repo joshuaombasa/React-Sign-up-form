@@ -37,7 +37,7 @@ function App() {
     <div className="App">
 
      <form className="signup-form" onSubmit={handleSubmit}>
-      
+
         <input 
         type="email" 
         className="email" 
@@ -46,6 +46,7 @@ function App() {
         name="email"
         value={formData.email}
         />
+        
         <input 
         type="password" 
         className="password" 
